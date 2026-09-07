@@ -17,6 +17,19 @@
     footer {
       scroll-margin-top: 90px;
     }
+
+    .consistent-background {
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    @media (max-width: 767px) {
+      .consistent-background {
+        background-attachment: scroll;
+      }
+    }
   </style>
 </head>
 
@@ -116,7 +129,7 @@
     });
   </script>
 
-  <section class="relative h-screen flex items-end pb-20 px-8 lg:px-24 bg-cover bg-center"
+  <section class="consistent-background relative h-screen flex items-end pb-20 px-8 lg:px-24 bg-cover bg-center"
     style="background-image: url('IMG_4003.jpg');">
     <div class="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] via-transparent to-transparent"></div>
     <div class="relative z-10 max-w-3xl border-l-2 border-gray-400 pl-6">
@@ -131,7 +144,7 @@
   </section>
 
   <section
-    class="relative min-h-[350px] py-28 flex flex-col items-center justify-center gap-12 bg-cover bg-center overflow-hidden"
+    class="consistent-background relative min-h-[350px] py-28 flex flex-col items-center justify-center gap-12 bg-cover bg-center overflow-hidden"
     style="background-image: url('IMG_3982.jpg');">
     <div class="absolute inset-0 bg-gradient-to-b from-[#0f0f0f] via-black/80 to-[#0f0f0f]"></div>
 
@@ -302,7 +315,7 @@
   </section>
 
   <footer id="contact" class="relative pt-24 pb-24 text-center bg-[#0f0f0f] overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-70"
+    <div class="consistent-background absolute inset-0 bg-cover bg-center bg-no-repeat opacity-70"
       style="background-image: url('fulltextred.png');"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-[#0f0f0f] from-0% via-black/80 via-[15%] to-black/90 to-100%">
     </div>
