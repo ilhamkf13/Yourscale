@@ -29,6 +29,12 @@
       .consistent-background {
         background-attachment: scroll;
       }
+
+      .hero-background {
+        background-size: contain;
+        background-position: center top;
+        background-color: #0f0f0f;
+      }
     }
   </style>
 </head>
@@ -129,7 +135,7 @@
     });
   </script>
 
-  <section class="consistent-background relative h-screen flex items-end pb-20 px-8 lg:px-24 bg-cover bg-center"
+  <section class="consistent-background hero-background relative h-screen flex items-end pb-20 px-8 lg:px-24 bg-cover bg-center"
     style="background-image: url('IMG_4003.jpg');">
     <div class="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] via-transparent to-transparent"></div>
     <div class="relative z-10 max-w-3xl border-l-2 border-gray-400 pl-6">
